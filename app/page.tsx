@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ButtonSharedState } from "./components/button-shared-state";
 import { ButtonIndependentState } from "./components/button-independent-state";
+import  MyInput from "./components/input";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,9 @@ export default function Home() {
       <h2 className="text-xl mt-3">Buttons with independent state</h2>
       <ButtonIndependentState />
       <ButtonIndependentState />
+
+      <h2 className="text-xl mt-3">Input Component</h2>
+      <MyInput />
     </div>
   );
 }
