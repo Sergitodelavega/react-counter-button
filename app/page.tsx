@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ButtonSharedState } from "./components/button-shared-state";
 import { ButtonIndependentState } from "./components/button-independent-state";
 import  MyInput from "./components/input";
+import TaskManager from "./components/task-manager";
+import CheckLogin from "./components/check-login";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -24,6 +26,12 @@ export default function Home() {
 
       <h2 className="text-xl mt-3">Input Component</h2>
       <MyInput />
+
+      <h2 className="text-2xl mt-2">Task Manager</h2>
+      <TaskManager />
+
+      <h2 className="text-2xl mt-2">Check Login</h2>
+      <CheckLogin />
     </div>
   );
 }
